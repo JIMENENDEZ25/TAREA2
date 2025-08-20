@@ -7,12 +7,12 @@ const sequelize = new Sequelize(
   dbConfig.PASSWORD,
   {
     host: dbConfig.HOST,
-    dialect: dbConfig.dialect,
+    dialect: 'postgres', // <- aquí debe ser 'postgres'
     dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false
-    },
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
   },
     pool: {
       max: dbConfig.pool.max,
