@@ -4,6 +4,7 @@ const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
   const client = {
+    id_cliente: req.body.id_cliente,
     nombre: req.body.nombre,
     email: req.body.email,
     telefono: req.body.telefono,
