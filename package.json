@@ -8,12 +8,21 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIMENENDEZ25/TAREA2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JIMENENDEZ25/TAREA2/issues"
+  },
+  "homepage": "https://github.com/JIMENENDEZ25/TAREA2#readme",
+  "description": ""
 }
