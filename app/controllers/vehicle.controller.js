@@ -5,6 +5,7 @@ const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
   const vehicle = {
+    id_vehiculo: req.body.id_vehiculo,
     marca: req.body.marca,
     modelo: req.body.modelo,
     anio: req.body.anio,
