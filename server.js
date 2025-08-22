@@ -11,7 +11,9 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.json());
+//app.use(express.json());
+const db = require("./app/models");
+db.sequelize.sync();
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to the rental service API." });
