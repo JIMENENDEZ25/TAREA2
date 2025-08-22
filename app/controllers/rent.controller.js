@@ -4,6 +4,7 @@ const Op = db.Sequelize.Op;
 
 exports.create = async (req, res) => {
   const rental = {
+    id_renta: req.body.id_renta,
     id_cliente: req.body.id_cliente,
     id_vehiculo: req.body.id_vehiculo,
     fecha_inicio: req.body.fecha_inicio,
